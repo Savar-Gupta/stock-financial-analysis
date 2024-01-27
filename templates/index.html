@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+</head>
+<body>
+    <h1>Stock Analysis</h1>
+
+    <form id="stockForm">
+        <label for="stockTicker">Enter Stock Ticker:</label>
+        <input type="text" id="stockTicker" required>
+        <button type="submit">Get Analysis</button>
+    </form>
+
+    <p id="response"></p>
+
+    <!-- Make sure to load the script AFTER the HTML elements -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
